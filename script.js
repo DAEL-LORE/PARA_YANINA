@@ -201,7 +201,7 @@ setTimeout(() => {
   contenedorFondo.style.zIndex = '1'; 
   document.body.appendChild(contenedorFondo);
 
-  const CANTIDAD_DE_RAMOS = 20;
+  const CANTIDAD_DE_RAMOS = 50;
 
   const zonas = [
     { xMin: 0, xMax: 25, yMin: 0, yMax: 100 },
