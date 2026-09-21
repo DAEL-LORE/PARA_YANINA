@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tulipanes amarillos 💛</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cielo"></div>
+
+<div id="mensaje">
+  <p>Todos los días son especiales contigo</p>
+</div>
+
+<div id="escena">
+  <div id="halo"></div>
+
+  <svg id="ramo" viewBox="0 0 484 660" xmlns="http://www.w3.org/2000/svg" aria-label="Ramo de flores amarillas">
+    <defs>
+      <linearGradient id="gPetalo" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%"   stop-color="#fff6bd"/>
+        <stop offset="40%"  stop-color="#ffe135"/>
+        <stop offset="100%" stop-color="#f0b90c"/>
+      </linearGradient>
+      <linearGradient id="gPetaloLado" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%"   stop-color="#ffdc3c"/>
+        <stop offset="100%" stop-color="#e2a80f"/>
+      </linearGradient>
+      <linearGradient id="gTallo" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%"   stop-color="#7fb262"/>
+        <stop offset="55%"  stop-color="#5b8f45"/>
+        <stop offset="100%" stop-color="#3e6a31"/>
+      </linearGradient>
+      <linearGradient id="gHoja" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%"   stop-color="#7ed94f"/>
+        <stop offset="55%"  stop-color="#3fa62e"/>
+        <stop offset="100%" stop-color="#1f6e17"/>
+      </linearGradient>
+      <linearGradient id="gPapel" x1="0.5" y1="0" x2="0.5" y2="1">
+        <stop offset="0%"   stop-color="#f8efdd"/>
+        <stop offset="46%"  stop-color="#ecd9b6"/>
+        <stop offset="100%" stop-color="#cfab7c"/>
+      </linearGradient>
+      <linearGradient id="gLazo" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%"   stop-color="#f8e2cd"/>
+        <stop offset="100%" stop-color="#dcaf87"/>
+      </linearGradient>
+      <radialGradient id="gBrillo" cx="50%" cy="50%" r="50%">
+        <stop offset="0%"   stop-color="#fffbcf" stop-opacity=".9"/>
+        <stop offset="100%" stop-color="#f4e58a" stop-opacity="0"/>
+      </radialGradient>
+
+      <g id="tulipan">
+        <ellipse cx="0" cy="-32" rx="50" ry="50" fill="url(#gBrillo)" opacity=".5"/>
+        <path d="M0,4 C-22,0 -42,-16 -40,-40 C-38,-58 -26,-64 -18,-56 C-26,-30 -20,-6 0,4 Z" fill="url(#gPetaloLado)"/>
+        <path d="M0,4 C22,0 42,-16 40,-40 C38,-58 26,-64 18,-56 C26,-30 20,-6 0,4 Z" fill="url(#gPetaloLado)"/>
+        <path d="M0,5 C-23,-1 -27,-30 -16,-56 C-9,-73 9,-73 16,-56 C27,-30 23,-1 0,5 Z" fill="url(#gPetalo)"/>
+        <path d="M-7,-10 C-12,-28 -10,-45 -4,-56" fill="none" stroke="#fffce6" stroke-opacity=".75" stroke-width="3" stroke-linecap="round"/>
+        <path d="M9,-14 C13,-30 11,-44 6,-54" fill="none" stroke="#c8b13c" stroke-opacity=".28" stroke-width="2.2" stroke-linecap="round"/>
+      </g>
+    </defs>
+
+    <g id="mecer">
+      <g id="papel">
+        <path d="M132,272 Q242,300 352,272
+          C344,320 300,390 278,442 C286,465 296,505 292,540 C288,565 265,585 242,600
+          C219,585 196,565 192,540 C188,505 198,465 206,442 C184,390 140,320 132,272 Z"
+          fill="url(#gPapel)" stroke="#5c3d1e" stroke-width="3" stroke-opacity=".85" stroke-linejoin="round"/>
+        <path d="M242,300 L352,272 C344,320 300,390 278,442 C286,465 296,505 292,540 C288,565 265,585 242,600 Z"
+          fill="#ffffff" fill-opacity=".14"/>
+        <path d="M242,300 C240,380 240,500 242,600" fill="none" stroke="#5c3d1e" stroke-opacity=".55" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M258,296 Q290,340 298,378 L298,440" fill="none" stroke="#5c3d1e" stroke-opacity=".45" stroke-width="2"/>
+        <path d="M168,320 C156,375 168,430 194,470" fill="none" stroke="#5c3d1e" stroke-opacity=".4" stroke-width="2"/>
+        <path d="M316,320 C328,375 316,430 290,470" fill="none" stroke="#5c3d1e" stroke-opacity=".4" stroke-width="2"/>
+        <path d="M132,272 Q242,300 352,272" fill="none" stroke="#fff6ea" stroke-opacity=".7" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+
+      <g id="tallos"></g>
+      <g id="hojas"></g>
+      <g id="flores"></g>
+
+      <g id="lazo" transform="translate(242,486) scale(0.82) translate(-242,-486)">
+        <path d="M242,480 C226,458 188,449 166,460 C147,470 148,494 170,501 C196,509 228,497 242,480 Z" fill="url(#gLazo)" stroke="#6b4423" stroke-width="2.2" stroke-opacity=".8" stroke-linejoin="round"/>
+        <path d="M170,501 C148,494 147,470 166,460 C188,449 226,458 242,480" fill="none" stroke="#fff6ea" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+        <path d="M242,480 C258,458 296,449 318,460 C337,470 336,494 314,501 C288,509 256,497 242,480 Z" fill="url(#gLazo)" stroke="#6b4423" stroke-width="2.2" stroke-opacity=".8" stroke-linejoin="round"/>
+        <path d="M314,501 C336,494 337,470 318,460 C296,449 258,458 242,480" fill="none" stroke="#fff6ea" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+        <path d="M234,494 C214,506 178,522 164,552 C154,574 168,590 186,580 L192,594 L202,576 C204,556 208,528 240,498 Z" fill="url(#gLazo)" stroke="#6b4423" stroke-width="2.2" stroke-opacity=".8" stroke-linejoin="round"/>
+        <path d="M250,494 C270,506 306,522 320,552 C330,574 316,590 298,580 L292,594 L282,576 C280,556 276,528 244,498 Z" fill="url(#gLazo)" stroke="#6b4423" stroke-width="2.2" stroke-opacity=".8" stroke-linejoin="round"/>
+        <path d="M230,472 Q242,467 254,472 Q259,480 254,489 Q242,494 230,489 Q225,480 230,472 Z" fill="url(#gLazo)" stroke="#6b4423" stroke-width="1.8" stroke-opacity=".8"/>
+        <ellipse cx="236" cy="475" rx="5.5" ry="4" fill="#fbe9d8" opacity=".85"/>
+      </g>
+    </g>
+  </svg>
+</div>
+
+<div id="controles">
+  <button class="btn" id="btnMusica">♫ When I Was Your Man</button>
+  <button class="btn" id="btnLluvia">✨ Destellos</button>
+</div>
+
+<div id="portada">
+  <h2>Tengo algo para ti…</h2>
+  <span>...</span>
+  <button class="btn" id="abrir">Abrir 💛</button>
+</div>
+
+<button class="cta" id="cta" type="button">Toca aquí</button>
+
+<div class="dim" id="dim"></div>
+
+<div class="reveal" id="reveal">
+  <div class="reveal__mark">💛</div>
+  <div class="reveal__title">Para ti </div>
+  <p class="reveal__text">Que esta fecha traiga tantas sonrisas<br>como pétalos tiene este ramo.</p>
+  <p class="reveal__from">— con cariño</p>
+  <button class="reveal__close" id="closeBtn" type="button">Cerrar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
